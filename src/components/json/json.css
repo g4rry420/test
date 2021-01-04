@@ -1,0 +1,20 @@
+.main-container{
+    width: 50%;
+    margin: 0 auto;
+}
+.red-color-selection::-moz-selection{
+    background-color: maroon;;
+    font-weight: 600;
+    color: white;
+}
+
+.resultP{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.resultP pre{
+    margin: 0;
+    color: maroon;
+    font-weight: 600;
+    -moz-user-select: element;
+}

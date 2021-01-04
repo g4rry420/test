@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+.main-chat-icon-container{
+    position: absolute;
+    bottom: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chat-icon-container{
+    position: relative;
+    display: inline-block;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chat-icon-container .chat-message-number{
+    position: absolute;
+    background-color: #85bb65;
+    padding: 2px 9px;
+    font-size: 1rem;
+    z-index: -2;
+    right: 17px;
+    top: 9px;
+    border-radius: 7px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.chat-icon{
+    background-color: #E2EDF7;
+    color: #213458;
+    font-size: 2rem;
+    padding: 17px 18px;
+    margin: 25px;
+    border-radius: 35px;
+    cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.chat-container .react-chatbot-kit-chat-container {
+    width: 360px;
+    height: 100vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chat-container .react-chatbot-kit-chat-inner-container {
+    height: 100%;
+}
+.chat-container .react-chatbot-kit-chat-message-container {
+    height: 87.5%;
+}
+.chat-container .react-chatbot-kit-chat-bot-message {
+    margin-left: initial;
 }

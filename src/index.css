@@ -1,3 +1,6 @@
+html{
+  line-height: 1.3;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  width: 100%;
+  height: 100%;
+  background-color: #213458;
+  color: white;
+  /* color: #85bb65;
+  color: #E2EDF7; */
 }

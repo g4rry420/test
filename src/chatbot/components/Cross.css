@@ -1,0 +1,11 @@
+.cross{
+    display: inline;
+    position: absolute;
+    top: 0px;
+    right: 18px;
+    cursor: pointer;
+}
+.messagingSend{
+    position: absolute;
+    right: -250%;
+}
