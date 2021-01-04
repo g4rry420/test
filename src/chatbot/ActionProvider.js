@@ -19,6 +19,11 @@ class ActionProvider {
                     ...prevState, messages: [...prevState.messages, ...message]
                 })
             })
+
+            message.forEach(async mess => {
+                await visitingUsers(visitorId, mess)
+            })
+            
         }else {
             this.setState(prevState => {
                 // console.log(prevState.messages)
@@ -36,9 +41,9 @@ class ActionProvider {
                     }
                 }
             })
+            await visitingUsers(visitorId, message)
         }
 
-        await visitingUsers(visitorId, message)
     }
 
     greet() {
